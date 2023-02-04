@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Rocketseat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="calculadora">
+            <div class="calculadora-visor">
+                <span>=</span>
+                <div class="visor-resultado">
+                    <div class="visor-conta" id="conta"> </div>
+                    <div class="visor-valor" id="resultado"> </div>
+                </div>
+            </div>
+            <div class="calculadora-btns">
+                <button onclick="limparDisplay()">CE</button>
+                <button onclick="apagar()">C</button>
+                <button onclick="colocarAlgo('%')">%</button>
+                <button class="btn-roxo" onclick="colocarAlgo('/')">÷</button>
+                <button onclick="colocarAlgo('7')">7</button>
+                <button onclick="colocarAlgo('8')">8</button>
+                <button onclick="colocarAlgo('9')">9</button>
+                <button class="btn-roxo" onclick="colocarAlgo('*')"><img src="assets/x.svg" alt=""></button>
+                <button onclick="colocarAlgo('4')">4</button>
+                <button onclick="colocarAlgo('5')">5</button>
+                <button onclick="colocarAlgo('6')">6</button>
+                <button class="btn-roxo" onclick="colocarAlgo('-')">-</button>
+                <button onclick="colocarAlgo('1')">1</button>
+                <button onclick="colocarAlgo('2')">2</button>
+                <button onclick="colocarAlgo('3')">3</button>
+                <button class="btn-roxo" onclick="colocarAlgo('+')">+</button>
+                <button onclick="colocarAlgo('')"><img src="assets/PlusMinus.svg" alt=""></button>
+                <button onclick="colocarAlgo('0')">0</button>
+                <button onclick="colocarAlgo(',')">,</button>
+                <button onclick="calcular()">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="calculadora.js"></script>
+</body>
+</html>
